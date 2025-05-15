@@ -1,0 +1,42 @@
+import React from 'react';
+import logo from '../../assets/Icons/icons8-job-application-96.png'
+import logo2 from '../../assets/Icons/Small_icons8-job-application-64.png'
+
+const Foooter = () => {
+    return (
+        <div className='mt-5'>
+            <footer className="footer sm:footer-horizontal bg-gray-900 text-base-content p-10">
+                <aside>
+                    <img src={logo} alt="" />
+                    <p>
+                        Job portal Ltd.
+                        <br />
+                        Providing reliable jobs since 1992
+                    </p>
+                </aside>
+                <nav>
+                    <h6 className="footer-title">Services</h6>
+                    <a className="link link-hover">Branding</a>
+                    <a className="link link-hover">Design</a>
+                    <a className="link link-hover">Marketing</a>
+                    <a className="link link-hover">Advertisement</a>
+                </nav>
+                <nav className='text-center'>
+                    <h6 className="footer-title">Company</h6>
+                    <a className="link link-hover">About us</a>
+                    <a className="link link-hover">Contact</a>
+                    <a className="link link-hover">Jobs</a>
+                    <a className="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Legal</h6>
+                    <a className="link link-hover">Terms of use</a>
+                    <a className="link link-hover">Privacy policy</a>
+                    <a className="link link-hover">Cookie policy</a>
+                </nav>
+            </footer>
+        </div>
+    );
+};
+
+export default Foooter;
