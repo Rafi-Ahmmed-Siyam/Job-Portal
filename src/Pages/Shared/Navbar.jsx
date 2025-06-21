@@ -22,6 +22,7 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/allJobs'}>All Jobs</NavLink></li>
         <li><NavLink to={'/myApplications'}>My Applications</NavLink></li>
         <li><NavLink to={'/addJobs'}>Add Jobs</NavLink></li>
         <li><NavLink to={'/myPostedJobs'}>My Posted Jobs</NavLink></li>
@@ -58,6 +59,7 @@ const Navbar = () => {
                             <div className="chat-image avatar border-green-500 border rounded-full mr-5 ">
                                 <div className="w-11 rounded-full">
                                     <img
+                                        referrerPolicy='no-referrer'
                                         alt="Tailwind CSS chat bubble component"
                                         src={user?.photoURL} />
                                 </div>

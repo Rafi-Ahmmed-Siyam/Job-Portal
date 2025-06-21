@@ -17,8 +17,8 @@ const AddJobs = () => {
         const { salaryMin, salaryMax, currency, ...newJob } = initialValue;
 
         newJob.salaryRange = {
-            min: salaryMin,
-            max: salaryMax,
+            min: parseInt(salaryMin),
+            max: parseInt(salaryMax),
             currency,
         }
 
@@ -88,7 +88,7 @@ const AddJobs = () => {
                             {/* Application Dedline */}
                             <div className='flex-1/3 '>
                                 <label className="label mb-1.5">Deadline</label>
-                                <input name='applicationDeadline'  type="date" className="input w-full" placeholder="Pick a Date" />
+                                <input name='applicationDeadline' type="date" className="input w-full" placeholder="Pick a Date" />
                             </div>
                         </div>
                         {/* Salary Range */}
@@ -97,12 +97,12 @@ const AddJobs = () => {
                             {/* min */}
                             <div className='flex-1/3'>
                                 <label className="label">Min</label>
-                                <input name='salaryMin' type="text" className="input w-full" placeholder="Min" />
+                                <input name='salaryMin' type="number" className="input w-full" placeholder="Min" />
                             </div>
                             {/* Max */}
                             <div className='flex-1/3'>
                                 <label className="label">Max</label>
-                                <input name='salaryMax' type="text" className="input w-full" placeholder="Max" />
+                                <input name='salaryMax' type="number" className="input w-full" placeholder="Max" />
                             </div>
                             {/* Curency */}
                             <div className='flex-1/3'>
@@ -133,7 +133,7 @@ const AddJobs = () => {
                         <input name='hr_name' type="text" className="input w-full" placeholder="HR Name" />
                         {/* HR Email */}
                         <label className="label">HR Email</label>
-                        <input name='hr_email' defaultValue={user?.email} type="email" className="input w-full" placeholder="HR Email" />
+                        <input readOnly disabled name='hr_email' defaultValue={user?.email} type="email" className="text-white input w-full" placeholder="HR Email" />
                         {/* Company Logo URL */}
                         <label className="label">Company Logo URL</label>
                         <input name='company_logo' type="url" className="input w-full" placeholder="Company Logo URL" />

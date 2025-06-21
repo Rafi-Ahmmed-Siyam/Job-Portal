@@ -48,7 +48,7 @@ const AuthProvider = ({ children }) => {
                 }
 
                 // Put in the right place
-                
+
 
             }
             else {
